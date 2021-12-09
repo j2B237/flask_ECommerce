@@ -24,14 +24,9 @@ def wishlist():
 
 @app.route("/cart")
 def cart():
-    return "cart view"
+    return render_template("cart.html", title="Sen Shop | Mon panier")
 
 
 @app.route("/checkout")
 def checkout():
     return "checkout view"
-
-
-@app.route("/login")
-def login():
-    return "Login view"
