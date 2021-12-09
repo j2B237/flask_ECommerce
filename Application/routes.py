@@ -29,4 +29,4 @@ def cart():
 
 @app.route("/checkout")
 def checkout():
-    return "checkout view"
+    return render_template("checkout.html", title="Sen Shop | Validation commande")
