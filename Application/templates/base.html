@@ -68,7 +68,7 @@
                 <div class="aa-language">
                   <div class="dropdown">
                     <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      <img src="img/flag/english.jpg" alt="english flag">ENGLISH
+                      <img src="{{ url_for('static', filename='img/flag/english.jpg')}}" alt="english flag">ENGLISH
                       <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -204,7 +204,7 @@
           <div class="navbar-collapse collapse">
             <!-- Left nav -->
             <ul class="nav navbar-nav">
-              <li><a href="index.html">Accueil</a></li>
+              <li><a href="{{url_for('index')}}">Accueil</a></li>
               <li><a href="#">Homme <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Casual</a></li>
