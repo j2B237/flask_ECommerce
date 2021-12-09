@@ -14,7 +14,7 @@ def index():
 
 @app.route("/account")
 def account():
-    return "Account view"
+    return render_template("account.html", title="Sen Shop | Mon compte")
 
 
 @app.route("/wishlist")
