@@ -19,7 +19,7 @@ def account():
 
 @app.route("/wishlist")
 def wishlist():
-    return "wishlist view"
+    return render_template("wishlist.html", title="Sen Shop | Mes favoris")
 
 
 @app.route("/cart")
